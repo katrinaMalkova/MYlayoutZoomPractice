@@ -45,11 +45,16 @@ html {
         margin: 0 56px 0 190px;
       }
       .header__name-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 40px;
-        gap: 4px;
+        width: 262px;
+        height: 21px;
+        top: 21px;
+        left: 1167px;
+        font-family: SF Pro Display;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: right;
       }
       
       .header__avatar-container {
@@ -136,6 +141,7 @@ html {
         font-style: normal;
         font-weight: 400;
         line-height: 21px; 
+        
       }
       
       .header__name-dropdown {
