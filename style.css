@@ -470,6 +470,15 @@ html {
         color: #002CFB ;
       }
 
+      .table__row-grade--scriptused {
+        color: var(--ui-red, #EA1A4F);
+        font-family: sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140% ; 
+      }
+
       .table_web-icon {
         width: 20px;
         height: 20px;
