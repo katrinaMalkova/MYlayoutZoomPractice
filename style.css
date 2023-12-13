@@ -484,3 +484,9 @@ html {
         height: 20px;
         flex-shrink: 0;
       }
+
+      .table__row-type-icon{
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+      }
