@@ -435,3 +435,14 @@ html {
         justify-content: space-between;
         width: 100%;
       }
+
+      .table__row-grade--recognize{
+        display: inline-flex;
+        padding: 9px 24px 11px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        border-radius: 4px;
+        border: 1px solid var(--ui-accent, #002CFB);
+        background: #FFF; 
+      }
