@@ -211,7 +211,7 @@ html {
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px; /* 150% */
+        line-height: 24px;
       }
       
       .sidebar__link-icon {
@@ -238,6 +238,7 @@ html {
         border-radius: 4px;
         background: #005ff8;
         border: none;
+}
       }
       
       .sidebar__button-text {
@@ -249,6 +250,7 @@ html {
         font-weight: 500;
         line-height: 148%;
       }
+
       .main {
         display: flex;
         flex-direction: row;
@@ -431,8 +433,6 @@ html {
       .table__row {
         display: flex;
         justify-content: space-between;
-        width: 1440px;
-        height: 2120px;
-        top: 64px;
-        left: 360px;
+        width: 100%;
+        
       }
