@@ -450,6 +450,7 @@ html {
         border-radius: 4px;
         border: 1px solid var(--ui-green, #28A879);
         background: var(--ui-light-green, #DBF8EF);
+        color: #00A775 ;
       }
 
       .table__row-grade-icon table__row-grade-icon--success {
