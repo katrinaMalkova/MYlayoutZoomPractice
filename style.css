@@ -479,7 +479,9 @@ body {
       .table__row-call-text,
       .table__row-source-text,
       .table__row-duration-text,
-      .table__row-grade--success {
+      .table__row-grade--success,
+      .table__row-grade--recognize,
+      .table__row-grade--notuse {
       margin: 0;
       font-family: sans-serif;
       font-size: 14px;
@@ -491,6 +493,41 @@ body {
 
       .table__row-grade--success {
       color: #2ecc71;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      display: flex;
+      padding: 6px 8px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid var(--UI-green, #28A879);
+      background: var(--UI-light-green, #DBF8EF);
+      }
+
+      .table__row-gradeBlue{
+        display: inline-flex;
+        padding: 9px 24px 11px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        border-radius: 4px;
+        border: 1px solid var(--UI-accent, #002CFB);
+        background: #FFF;
+        
+      }
+
+      .table__row-grade--recognize{
+        color: #005FF8 ;
+      }
+
+      .table__row-grade--notuse{
+        color: var(--UI-red, #EA1A4F);
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
       }
 
       .data-tommorow{
