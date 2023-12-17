@@ -470,7 +470,8 @@ body {
       }
       
       .table__row-type-icon,
-      .table__row-grade-icon {
+      .table__row-grade-icon
+      .table__row-type-iconBlue, {
       width: 16px;
       height: 16px;
       }
@@ -481,7 +482,9 @@ body {
       .table__row-duration-text,
       .table__row-grade--success,
       .table__row-grade--recognize,
-      .table__row-grade--notuse {
+      .table__row-grade--notuse, 
+      .table__row-grade--good,
+      .table__row-grade--bad {
       margin: 0;
       font-family: sans-serif;
       font-size: 14px;
@@ -528,6 +531,32 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 19.6px */
+      }
+
+      .table__row-grade--good{
+        display: flex;
+        padding: 6px 8px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        border: 1px solid var(--UI-Icon, #ADBFDF);
+        background: var(--UI-secondary, #D8E4FB);
+        color: var(--text, #122945);
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 14px */
+      }
+
+      .table__row-grade--bad{
+        display: flex;
+        padding: 6px 8px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        border: 1px solid var(--UI-red, #EA1A4F);
+        background: var(--UI-light-red, #FEE9EF);
       }
 
       .data-tommorow{
