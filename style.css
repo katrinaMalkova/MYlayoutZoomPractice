@@ -238,7 +238,6 @@ html {
         border-radius: 4px;
         background: #005ff8;
         border: none;
-}
       }
       
       .sidebar__button-text {
@@ -360,16 +359,17 @@ html {
         flex-direction: column;
         justify-content: flex-end;
         width: 1440px;
-        margin: 0 0 0 auto;
-      }
-      
-      .table__filters {
+        margin: 0 auto;
+        }
+        
+        .table__filters {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-      }
-      
-      .table__filter-text {
+        margin-bottom: 16px;
+        }
+        
+        .table__filter-text {
         color: #5e7793;
         font-family: sans-serif;
         font-size: 14px;
@@ -378,30 +378,32 @@ html {
         line-height: 140%;
         margin: 0;
         white-space: nowrap;
-      }
-      
-      .table__filter-search {
+        }
+        
+        .table__filter-search {
         display: flex;
         height: 48px;
-        padding: 14px 0 14px 0px;
+        padding: 14px 0 14px 10px;
         align-items: center;
         flex-shrink: 0;
-      }
-      
-      .table__filters-container {
+        border-radius: 8px;
+        background-color: #f7f8f9;
+        }
+        
+        .table__filters-container {
         display: flex;
         flex-direction: row;
         gap: 32px;
-      }
-      
-      .table__filter {
+        }
+        
+        .table__filter {
         display: flex;
         flex-direction: row;
         display: inline-flex;
         align-items: center;
-      }
-      
-      .table__container {
+        }
+        
+        .table__container {
         border-radius: 8px;
         background: #fff;
         box-shadow: 0px 4px 5px 0px #e9edf3;
@@ -409,9 +411,9 @@ html {
         padding: 24px 40px 57px;
         flex-direction: column;
         align-items: center;
-      }
-      
-      .table__header {
+        }
+        
+        .table__header {
         height: 54px;
         border-bottom: 1px solid #eaf0fa;
         display: flex;
@@ -419,95 +421,99 @@ html {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-      }
-      
-      .table__header-text {
+        }
+        
+        .table__header-text {
         color: #899cb1;
         font-family: sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
-      }
-      
-      .table__row {
+        margin-bottom: 8px;
+        }
+        
+        .table__row {
         display: flex;
         justify-content: space-between;
         width: 100%;
-      }
-
-      .table__row-grade{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      }
-
-      .table__row-grade--success {
+        margin-bottom: 8px;
+        }
+        
+        .table__row-type {
         display: flex;
-        padding: 6px 8px;
-        align-items: flex-start;
-        gap: 10px;
-        border-radius: 4px;
-        border: 1px solid var(--ui-green, #28A879);
-        background: var(--ui-light-green, #DBF8EF);
-        color: #00A775 ;
-      }
-
-      .table__row-grade-icon table__row-grade-icon--success {
-        width: 28px;
-        height: 8px;
-      }
-      
-      .table__row-grade--recognize{
-        display: inline-flex;
-        padding: 9px 24px 11px 24px;
-        justify-content: center;
         align-items: center;
-        gap: 14px;
-        border-radius: 4px;
-        border: 1px solid var(--ui-accent, #002CFB);
-        background: #FFF; 
-        color: #002CFB ;
-      }
-
-      .table__row-grade--scriptused {
-        color: var(--ui-red, #EA1A4F);
+        }
+        
+        .table__row-time,
+        .table__row-call,
+        .table__row-source,
+        .table__row-duration {
+        display: flex;
+        align-items: center;
+        }
+        
+        .table__header-employee,
+        .table__row-grade {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        }
+        
+        .table__header-employee-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        }
+        
+        .table__row-type-icon,
+        .table__row-grade-icon {
+        width: 16px;
+        height: 16px;
+        }
+        
+        .table__row-time-text,
+        .table__row-call-text,
+        .table__row-source-text,
+        .table__row-duration-text,
+        .table__row-grade--success {
+        margin: 0;
         font-family: sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140% ; 
-      }
+        line-height: 140%;
+        color: #222222;
+        }
+        
+        .table__row-grade--success {
+        color: #2ecc71;
+        }
 
-      .table_web-icon {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-      }
+        .data-tommorow{
+          width: 58px;
+          height: 22px;
+          top: 1151px;
+          left: 40px;
+          flex-shrink: 0;
+          
+        }
 
-      .table__row-type-icon{
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-      }
-
-      .table__row-time{
-        color: var(--text, #122945);
-        text-align: right;
-        font-family: SF Pro Display;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%; /* 21px */
-      }
-
-      .table__header-employee{
-        display: flex;
-        width: 32px;
-        height: 32px;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-      }
-
+        .tommorow {
+          color: var(--text, #122945);
+          font-family: SF Pro Display;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 145%;
+          letter-spacing: 0.15px;
+        }
       
+        .number-data{
+          color: var(--text-header, #899CB1);
+          font-family: SF Pro Display;
+          font-size: 12 px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%;
+        }
